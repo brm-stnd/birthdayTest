@@ -46,12 +46,13 @@ const UserService = {
     if (!user) res.status(400).json("User not found");
 
     const dateFormat = dayjs(body.birthdayDate).format("YYYY-MM-DD");
-    const userTimezone = dayjs.tz(`${dateFormat} 09:00:00`, body.timezone);
-    const jakartaTimezone = dayjs.tz(userTimezone, "Asia/Jakarta").toDate();
+    const userTimezone = dayjs
+      .tz(`${dateFormat} 09:00:00`, body.timezone)
+      .toDate();
 
     user.firstName = body.firstName;
     user.email = body.email;
-    user.birthdayDate = jakartaTimezone;
+    user.birthdayDate = userTimezone;
     user.timezone = body.timezone;
 
     if (body.lastName) {
