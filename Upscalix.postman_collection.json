@@ -1,0 +1,158 @@
+{
+	"info": {
+		"_postman_id": "3d6c301b-6df5-4771-aefb-15dd32a4005a",
+		"name": "Upscalix",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Send Mail",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"email\": \"test@digitalenvision.com.au\",\n  \"message\": \"Hi, nice to meet you.\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://email-service.digitalenvision.com.au/send-email",
+					"protocol": "https",
+					"host": [
+						"email-service",
+						"digitalenvision",
+						"com",
+						"au"
+					],
+					"path": [
+						"send-email"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create User",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"firstName\": \"asdf\",\n  \"lastName\": \"Hi, nice to meet you.\",\n  \"email\": \"asdf@dafg.com\",\n  \"birthdayDate\": \"1990-11-30\",\n  \"timezone\": \"Australia/Melbourne\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:6000/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6000",
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete User",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:6000/users/638469bd36a5afaf15f35008",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6000",
+					"path": [
+						"users",
+						"638469bd36a5afaf15f35008"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update User",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"firstName\": \"asdf\",\n  \"lastName\": \"hooo\",\n  \"email\": \"asdf@dafg.com\",\n  \"birthdayDate\": \"1990-01-20\",\n  \"timezone\": \"Australia/Melbourne\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:6000/users/6386a6d9c455b30599c084c4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6000",
+					"path": [
+						"users",
+						"6386a6d9c455b30599c084c4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Birthdate",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:6000/users/birthday?page=1&limit=1000",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6000",
+					"path": [
+						"users",
+						"birthday"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "limit",
+							"value": "1000"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
