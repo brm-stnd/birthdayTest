@@ -1,0 +1,38 @@
+[
+  {
+    "code": "ADD00011",
+    "detail": {
+      "address": "Multimedia Nusantara University, Jl. Scientia Boulevard, Curug Sangereng, Kec. Klp. Dua, Tangerang, Banten 15810, Indonesia",
+      "coordinate": {
+        "latitude": -6.2575699,
+        "longitude": 106.6183308
+      },
+      "village": "Curug Sangereng",
+      "district": "Kec. Klp. Dua",
+      "city": "Tangerang",
+      "province": "Banten",
+      "postalCode": "15810",
+      "name": "robert poem",
+      "phone": "085657333344",
+      "email": "robert.poem@gmail.com"
+    }
+  },
+  {
+    "code": "ADD00012",
+    "detail": {
+      "address": "Multimedia Nusantara University, Jl. Scientia Boulevard, Curug Sangereng, Kec. Klp. Dua, Tangerang, Banten 15810, Indonesia",
+      "coordinate": {
+        "latitude": -6.2575699,
+        "longitude": 106.6183308
+      },
+      "village": "Curug Sangereng",
+      "district": "Kec. Klp. Dua",
+      "city": "Tangerang",
+      "province": "Banten",
+      "postalCode": "15810",
+      "name": "ryan freed",
+      "phone": "087657337344",
+      "email": "ryan.freed@gmail.com"
+    }
+  }
+]

@@ -1,0 +1,19 @@
+{
+  "meta": {
+    "status": "success",
+    "message": "Successfully get partner price."
+  },
+  "data": [
+    {
+      "amount": 73000,
+      "currency": "IDR",
+      "distance": 27.6,
+      "name": "GoSend",
+      "serviceType": "Instant",
+      "vehicleType": "bike",
+      "vehicleTypeCategory": "bike",
+      "serviceTypeCategory": "instant",
+      "deliveryPartnerId": "g7CIrjwL3mDbCy50cJ9B"
+    }
+  ]
+}

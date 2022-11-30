@@ -1,0 +1,650 @@
+{
+  "meta": {
+    "status": "success",
+    "message": "Successfully get partners"
+  },
+  "data": [
+    {
+      "id": "4d8uDYQCLbnrdyQfHWmD",
+      "name": "Paxel",
+      "serviceTypes": [
+        {
+          "name": "Sameday",
+          "id": "SAMEDAY",
+          "category": "sameday",
+          "info": "",
+          "vehicleTypes": ["other"]
+        }
+      ],
+      "vehicleTypes": [
+        {
+          "name": "Other",
+          "id": "other",
+          "category": "other"
+        }
+      ],
+      "iconUrl": "https://storage.googleapis.com/delivery_assets/icons/partners/paxel.png",
+      "barcodeType": "Code 128"
+    },
+    {
+      "id": "A5gQcescT0c2FDk9vs9R",
+      "name": "Ninja",
+      "serviceTypes": [
+        {
+          "category": "regular",
+          "isIgnoreServiceType": false,
+          "id": "Standard",
+          "vehicleTypes": ["other"],
+          "name": "Standard",
+          "isIgnoreVehicleType": true
+        },
+        {
+          "isIgnoreVehicleType": true,
+          "isIgnoreServiceType": false,
+          "id": "Express",
+          "name": "Express",
+          "category": "regular",
+          "vehicleTypes": ["other"]
+        },
+        {
+          "category": "sameday",
+          "name": "Sameday",
+          "isIgnoreServiceType": false,
+          "isIgnoreVehicleType": true,
+          "vehicleTypes": ["other"],
+          "id": "Sameday"
+        },
+        {
+          "isIgnoreVehicleType": true,
+          "isIgnoreServiceType": false,
+          "category": "nextday",
+          "id": "Nextday",
+          "name": "Nextday",
+          "vehicleTypes": ["other"]
+        }
+      ],
+      "vehicleTypes": [
+        {
+          "name": "Other",
+          "category": "other",
+          "id": "other"
+        }
+      ],
+      "iconUrl": "https://storage.googleapis.com/dev-delivery-gateway/icons/partners/ninja.png",
+      "barcodeType": "Code 128"
+    },
+    {
+      "id": "C5ygrrviPwdDmHAOEg7U",
+      "name": "SiCepat",
+      "serviceTypes": [
+        {
+          "id": "SDS",
+          "category": "sameday",
+          "name": "Sds",
+          "info": "",
+          "vehicleTypes": ["bike", "car"]
+        },
+        {
+          "info": "",
+          "id": "REG",
+          "category": "regular",
+          "name": "Reg",
+          "vehicleTypes": ["bike", "car"]
+        },
+        {
+          "info": "",
+          "id": "BEST",
+          "category": "nextday",
+          "vehicleTypes": ["bike", "car"],
+          "name": "Best"
+        },
+        {
+          "info": "",
+          "id": "SIUNT",
+          "name": "Siunt",
+          "vehicleTypes": ["bike", "car"],
+          "category": "sameday"
+        },
+        {
+          "id": "GOKIL",
+          "category": "economy",
+          "name": "Gokil",
+          "info": "",
+          "vehicleTypes": ["bike", "car"]
+        },
+        {
+          "name": "Kepo",
+          "category": "sameday",
+          "id": "KEPO",
+          "vehicleTypes": ["bike", "car"],
+          "info": ""
+        },
+        {
+          "category": "economy",
+          "name": "Halu",
+          "id": "HALU",
+          "info": "",
+          "vehicleTypes": ["bike", "car"]
+        }
+      ],
+      "vehicleTypes": [
+        {
+          "category": "bike",
+          "name": "Bike",
+          "id": "bike"
+        },
+        {
+          "id": "car",
+          "name": "Car",
+          "category": "car"
+        }
+      ],
+      "iconUrl": "https://storage.googleapis.com/dev-delivery-gateway/icons/partners/sicepat.png"
+    },
+    {
+      "id": "FLaLLeLYBhzOJvJ3TKjc",
+      "name": "Grab Express",
+      "serviceTypes": [
+        {
+          "name": "Instant",
+          "info": "",
+          "category": "instant",
+          "id": "INSTANT",
+          "vehicleTypes": ["bike"]
+        },
+        {
+          "name": "Same Day",
+          "category": "sameday",
+          "id": "SAME_DAY",
+          "info": "",
+          "vehicleTypes": ["bike"]
+        }
+      ],
+      "vehicleTypes": [
+        {
+          "category": "bike",
+          "name": "Bike",
+          "info": "",
+          "id": "bike"
+        }
+      ],
+      "iconUrl": "https://storage.googleapis.com/dev-delivery-gateway/icons/partners/grab.png"
+    },
+    {
+      "id": "Mu9f8PzZq5JbaoIsi12Y",
+      "name": "SAP",
+      "serviceTypes": [
+        {
+          "info": "",
+          "id": "SAME DAY SERVICE",
+          "category": "sameday",
+          "vehicleTypes": ["other"],
+          "name": "SAME DAY SERVICE"
+        },
+        {
+          "info": "",
+          "id": "REGULER",
+          "vehicleTypes": ["other"],
+          "category": "regular",
+          "name": "REGULER"
+        },
+        {
+          "name": "REGULAR DARAT",
+          "category": "regular",
+          "id": "REGULAR DARAT",
+          "info": "",
+          "vehicleTypes": ["other"]
+        },
+        {
+          "category": "nextday",
+          "id": "ONE DAY SERVICE",
+          "info": "",
+          "name": "ONE DAY SERVICE",
+          "vehicleTypes": ["other"]
+        }
+      ],
+      "vehicleTypes": [
+        {
+          "id": "other",
+          "category": "other",
+          "name": "Other"
+        }
+      ],
+      "iconUrl": "https://storage.googleapis.com/delivery_assets/icons/partners/sap.png"
+    },
+    {
+      "id": "N55ZaVlkzynVqdQMamOc",
+      "name": "Borzo",
+      "serviceTypes": [
+        {
+          "category": "regular",
+          "vehicleTypes": ["1", "2", "3", "7", "8"],
+          "id": "standard",
+          "name": "Standard",
+          "info": ""
+        },
+        {
+          "info": "",
+          "name": "Sameday",
+          "vehicleTypes": [],
+          "category": "sameday",
+          "id": "same_day"
+        }
+      ],
+      "vehicleTypes": [
+        {
+          "id": "1",
+          "name": "Car / SUV / PickUp",
+          "category": "car"
+        },
+        {
+          "name": "Minivan",
+          "id": "2",
+          "category": "car"
+        },
+        {
+          "id": "3",
+          "name": "Van",
+          "category": "car"
+        },
+        {
+          "id": "7",
+          "category": "car",
+          "name": "Car"
+        },
+        {
+          "category": "bike",
+          "name": "Motorbike",
+          "id": "8"
+        }
+      ],
+      "iconUrl": "https://storage.googleapis.com/delivery_assets/icons/partners/borzo.png"
+    },
+    {
+      "id": "YmrUZ5BKdkT5tyzenV0Z",
+      "name": "Westbike",
+      "serviceTypes": [
+        {
+          "info": "2 - 4 hours",
+          "id": "G-SameDay",
+          "category": "sameday",
+          "vehicleTypes": ["BICYCLE"],
+          "name": "Sameday"
+        }
+      ],
+      "vehicleTypes": [
+        {
+          "category": "bike",
+          "id": "BICYCLE",
+          "info": "",
+          "name": "Bicycle"
+        }
+      ],
+      "iconUrl": "https://storage.googleapis.com/dev-delivery-gateway/icons/partners/westbike.png"
+    },
+    {
+      "id": "e7Leogt3kny8jpGz5iCJ",
+      "name": "Tiki",
+      "serviceTypes": [
+        {
+          "category": "regular",
+          "vehicleTypes": ["other"],
+          "id": "REG",
+          "name": "Reguler",
+          "info": ""
+        },
+        {
+          "id": "ONS",
+          "vehicleTypes": ["other"],
+          "category": "nextday",
+          "name": "Over Night Service",
+          "info": ""
+        },
+        {
+          "category": "sameday",
+          "vehicleTypes": ["other"],
+          "name": "Same Day Service",
+          "id": "SDS",
+          "info": ""
+        },
+        {
+          "category": "regular",
+          "id": "TRC",
+          "vehicleTypes": ["other"],
+          "info": "",
+          "name": "Trucking Service"
+        },
+        {
+          "info": "",
+          "category": "economy",
+          "name": "Economy Service",
+          "vehicleTypes": ["other"],
+          "id": "ECO"
+        }
+      ],
+      "vehicleTypes": [
+        {
+          "id": "other",
+          "name": "Other",
+          "category": "other"
+        }
+      ],
+      "iconUrl": "https://storage.googleapis.com/dev-delivery-gateway/icons/partners/tiki.png"
+    },
+    {
+      "id": "g7CIrjwL3mDbCy50cJ9B",
+      "name": "GoSend",
+      "serviceTypes": [
+        {
+          "category": "instant",
+          "vehicleTypes": ["bike"],
+          "id": "Instant",
+          "name": "Instant",
+          "info": ""
+        },
+        {
+          "name": "Sameday",
+          "vehicleTypes": ["bike"],
+          "info": "",
+          "id": "SameDay",
+          "category": "sameday"
+        }
+      ],
+      "vehicleTypes": [
+        {
+          "name": "Bike",
+          "category": "bike",
+          "id": "bike"
+        }
+      ],
+      "iconUrl": "https://storage.googleapis.com/dev-delivery-gateway/icons/partners/gosend.png"
+    },
+    {
+      "id": "gQp55UDteuLTEtDx5bbm",
+      "name": "Lalamove",
+      "serviceTypes": [
+        {
+          "id": "instant",
+          "name": "Instant",
+          "vehicleTypes": ["MOTORCYCLE", "SEDAN", "MPV", "VAN", "TRUCK175"],
+          "category": "instant",
+          "info": ""
+        }
+      ],
+      "vehicleTypes": [
+        {
+          "id": "MOTORCYCLE",
+          "category": "bike",
+          "name": "Motorcycle"
+        },
+        {
+          "category": "car",
+          "name": "Sedan",
+          "id": "SEDAN"
+        },
+        {
+          "name": "MPV",
+          "category": "car",
+          "id": "MPV"
+        },
+        {
+          "category": "car",
+          "name": "VAN",
+          "id": "VAN"
+        },
+        {
+          "id": "TRUCK175",
+          "category": "car",
+          "name": "Truck175"
+        }
+      ],
+      "iconUrl": "https://storage.googleapis.com/delivery_assets/icons/partners/lalamove.png"
+    },
+    {
+      "id": "jrwGzvu5ZddSvWz8DWAJ",
+      "name": "RaRa",
+      "serviceTypes": [
+        {
+          "info": "",
+          "id": "instant",
+          "category": "instant",
+          "name": "Instant",
+          "vehicleTypes": ["bike"]
+        }
+      ],
+      "vehicleTypes": [
+        {
+          "info": "",
+          "category": "bike",
+          "id": "bike",
+          "name": "Bike"
+        }
+      ],
+      "iconUrl": "https://storage.googleapis.com/dev-delivery-gateway/icons/partners/rara.png"
+    },
+    {
+      "id": "nwWRPJIatqnnOj4J0MNR",
+      "name": "RPX",
+      "serviceTypes": [
+        {
+          "name": "RPX PAS Economy",
+          "id": "PSC",
+          "vehicleTypes": ["other"],
+          "info": "",
+          "category": "economy"
+        },
+        {
+          "category": "regular",
+          "name": "RPX PAS Heavy Weight",
+          "id": "PHW",
+          "vehicleTypes": ["other"],
+          "info": ""
+        },
+        {
+          "name": "RPX PAS Reguler",
+          "id": "PSR",
+          "vehicleTypes": ["other"],
+          "info": "",
+          "category": "regular"
+        },
+        {
+          "info": "",
+          "category": "sameday",
+          "name": "RPX PAS SameDay",
+          "vehicleTypes": ["other"],
+          "id": "PSS"
+        },
+        {
+          "category": "nextday",
+          "info": "",
+          "name": "RPX PAS NextDay",
+          "id": "PSN",
+          "vehicleTypes": ["other"]
+        },
+        {
+          "id": "PSM",
+          "category": "nextday",
+          "info": "",
+          "vehicleTypes": ["other"],
+          "name": "RPX PAS MidDay"
+        },
+        {
+          "name": "Economy Delivery",
+          "info": "",
+          "category": "economy",
+          "vehicleTypes": ["other"],
+          "id": "ECP"
+        },
+        {
+          "info": "",
+          "id": "RGP",
+          "name": "Regular Package",
+          "vehicleTypes": ["other"],
+          "category": "regular"
+        },
+        {
+          "name": "NextDay Package",
+          "category": "nextday",
+          "id": "NDP",
+          "vehicleTypes": ["other"],
+          "info": ""
+        },
+        {
+          "name": "Sameday Package",
+          "vehicleTypes": ["other"],
+          "id": "SDP",
+          "info": "",
+          "category": "sameday"
+        },
+        {
+          "info": "",
+          "id": "MDP",
+          "name": "MidNight Package",
+          "category": "nextday",
+          "vehicleTypes": ["other"]
+        },
+        {
+          "vehicleTypes": ["other"],
+          "info": "",
+          "category": "regular",
+          "id": "HWP",
+          "name": "Heavy Weight Delivery"
+        }
+      ],
+      "vehicleTypes": [
+        {
+          "id": "other",
+          "name": "Other",
+          "category": "other"
+        }
+      ],
+      "iconUrl": "https://storage.googleapis.com/dev-delivery-gateway/icons/partners/jnt.png"
+    },
+    {
+      "id": "rD6xXDNBIbdU9juIVWHY",
+      "name": "J&T",
+      "serviceTypes": [
+        {
+          "info": "",
+          "name": "EZ",
+          "category": "regular",
+          "vehicleTypes": ["other"],
+          "id": "EZ"
+        }
+      ],
+      "vehicleTypes": [
+        {
+          "name": "Other",
+          "category": "other",
+          "id": "other"
+        }
+      ],
+      "iconUrl": "https://storage.googleapis.com/dev-delivery-gateway/icons/partners/jnt.png"
+    },
+    {
+      "id": "tKltNWbr9mC8b544ZwQy",
+      "name": "NCS",
+      "serviceTypes": [
+        {
+          "vehicleTypes": ["other"],
+          "category": "regular",
+          "id": "NRS",
+          "info": "",
+          "name": "NRS(Regular Service)"
+        },
+        {
+          "info": "",
+          "category": "nextday",
+          "id": "ONS",
+          "name": "ONS(One Night Service)",
+          "vehicleTypes": ["other"]
+        },
+        {
+          "name": "SDS(SameDay Service)",
+          "vehicleTypes": ["other"],
+          "category": "sameday",
+          "info": "",
+          "id": "SDS"
+        },
+        {
+          "category": "nextday",
+          "name": "NFO(Food-One Night Service)",
+          "vehicleTypes": ["other"],
+          "info": "",
+          "id": "NFO"
+        },
+        {
+          "id": "NFS",
+          "category": "sameday",
+          "vehicleTypes": ["other"],
+          "info": "",
+          "name": "NFS(Food-SameDay Service)"
+        },
+        {
+          "info": "",
+          "vehicleTypes": ["other"],
+          "category": "regular",
+          "id": "DRT",
+          "name": "DRT(Regular Darat)"
+        },
+        {
+          "info": "",
+          "id": "JMR",
+          "name": "JMR(Jawa Murah)",
+          "category": "economy",
+          "vehicleTypes": ["other"]
+        }
+      ],
+      "vehicleTypes": [
+        {
+          "id": "other",
+          "name": "Other",
+          "category": "other"
+        }
+      ],
+      "iconUrl": "https://storage.googleapis.com/dev-delivery-gateway/icons/partners/ncs.png"
+    },
+    {
+      "id": "zPTUwTvBOvWbHRx172Ko",
+      "name": "JNE",
+      "serviceTypes": [
+        {
+          "id": "JTR",
+          "name": "JTR 18",
+          "info": "",
+          "category": "regular",
+          "vehicleTypes": ["other"]
+        },
+        {
+          "category": "regular",
+          "info": "",
+          "name": "Regular",
+          "id": "REG",
+          "vehicleTypes": ["other"]
+        },
+        {
+          "id": "YES",
+          "category": "nextday",
+          "info": "",
+          "vehicleTypes": ["other"],
+          "name": "Yes"
+        },
+        {
+          "info": "",
+          "name": "Oke",
+          "vehicleTypes": ["other"],
+          "category": "economy",
+          "id": "OKE"
+        }
+      ],
+      "vehicleTypes": [
+        {
+          "category": "other",
+          "name": "Other",
+          "id": "other"
+        }
+      ],
+      "iconUrl": "https://storage.googleapis.com/dev-delivery-gateway/icons/partners/jne.png"
+    }
+  ]
+}

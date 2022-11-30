@@ -1,0 +1,40 @@
+[
+  {
+    "code": "ADD00001",
+    "detail": {
+      "address": "Warung Sembako Ibu Haji Saroh, WMQ2+HH7, Kampung Besar, Teluknaga, Tangerang, Banten 15510, Indonesia",
+      "keywords": "Warung",
+      "coordinate": {
+        "latitude": -6.0610765,
+        "longitude": 106.6514075
+      },
+      "village": "Kampung Besar",
+      "district": "Teluknaga",
+      "city": "Tangerang",
+      "province": "Banten",
+      "postalCode": "15510",
+      "name": "devon lane",
+      "phone": "089654342443",
+      "email": "devon.lane@gmail.com"
+    }
+  },
+  {
+    "code": "ADD00002",
+    "detail": {
+      "address": "Warung Sembako Ibu Haji Saroh, WMQ2+HH7, Kampung Besar, Teluknaga, Tangerang, Banten 15510, Indonesia",
+      "keywords": "Warung",
+      "coordinate": {
+        "latitude": -6.0610765,
+        "longitude": 106.6514075
+      },
+      "village": "Kampung Besar",
+      "district": "Teluknaga",
+      "city": "Tangerang",
+      "province": "Banten",
+      "postalCode": "15510",
+      "name": "sarah loyd",
+      "phone": "089657392734",
+      "email": "sarah.loyd@gmail.com"
+    }
+  }
+]

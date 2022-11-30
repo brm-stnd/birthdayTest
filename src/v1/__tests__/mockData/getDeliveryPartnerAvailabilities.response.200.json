@@ -1,0 +1,1392 @@
+{
+  "meta": {
+    "status": "success",
+    "message": "Successfully get delivery partner availabilities."
+  },
+  "data": {
+    "call": {
+      "requestBodies": [
+        {
+          "deliveryPartnerId": "FLaLLeLYBhzOJvJ3TKjc",
+          "name": "Grab Express",
+          "serviceId": "SAME_DAY",
+          "vehicleId": ""
+        },
+        {
+          "deliveryPartnerId": "FLaLLeLYBhzOJvJ3TKjc",
+          "name": "Grab Express",
+          "serviceId": "INSTANT",
+          "vehicleId": ""
+        },
+        {
+          "deliveryPartnerId": "rD6xXDNBIbdU9juIVWHY",
+          "name": "J&T",
+          "serviceId": "EZ",
+          "vehicleId": ""
+        },
+        {
+          "deliveryPartnerId": "YmrUZ5BKdkT5tyzenV0Z",
+          "name": "Westbike",
+          "serviceId": "G-SameDay",
+          "vehicleId": ""
+        },
+        {
+          "deliveryPartnerId": "A5gQcescT0c2FDk9vs9R",
+          "name": "Ninja",
+          "serviceId": "",
+          "vehicleId": "other"
+        },
+        {
+          "deliveryPartnerId": "A5gQcescT0c2FDk9vs9R",
+          "name": "Ninja",
+          "serviceId": "",
+          "vehicleId": "other"
+        },
+        {
+          "deliveryPartnerId": "A5gQcescT0c2FDk9vs9R",
+          "name": "Ninja",
+          "serviceId": "",
+          "vehicleId": "other"
+        },
+        {
+          "deliveryPartnerId": "gQp55UDteuLTEtDx5bbm",
+          "name": "Lalamove",
+          "serviceId": "instant",
+          "vehicleId": "SEDAN"
+        },
+        {
+          "deliveryPartnerId": "gQp55UDteuLTEtDx5bbm",
+          "name": "Lalamove",
+          "serviceId": "instant",
+          "vehicleId": "TRUCK175"
+        },
+        {
+          "deliveryPartnerId": "gQp55UDteuLTEtDx5bbm",
+          "name": "Lalamove",
+          "serviceId": "instant",
+          "vehicleId": "VAN"
+        },
+        {
+          "deliveryPartnerId": "gQp55UDteuLTEtDx5bbm",
+          "name": "Lalamove",
+          "serviceId": "instant",
+          "vehicleId": "MOTORCYCLE"
+        },
+        {
+          "deliveryPartnerId": "gQp55UDteuLTEtDx5bbm",
+          "name": "Lalamove",
+          "serviceId": "instant",
+          "vehicleId": "MPV"
+        },
+        {
+          "deliveryPartnerId": "e7Leogt3kny8jpGz5iCJ",
+          "name": "Tiki",
+          "serviceId": "",
+          "vehicleId": ""
+        },
+        {
+          "deliveryPartnerId": "jrwGzvu5ZddSvWz8DWAJ",
+          "name": "RaRa",
+          "serviceId": "",
+          "vehicleId": ""
+        },
+        {
+          "deliveryPartnerId": "N55ZaVlkzynVqdQMamOc",
+          "name": "Borzo",
+          "serviceId": "standard",
+          "vehicleId": "1"
+        },
+        {
+          "deliveryPartnerId": "N55ZaVlkzynVqdQMamOc",
+          "name": "Borzo",
+          "serviceId": "standard",
+          "vehicleId": "2"
+        },
+        {
+          "deliveryPartnerId": "N55ZaVlkzynVqdQMamOc",
+          "name": "Borzo",
+          "serviceId": "standard",
+          "vehicleId": "3"
+        },
+        {
+          "deliveryPartnerId": "N55ZaVlkzynVqdQMamOc",
+          "name": "Borzo",
+          "serviceId": "standard",
+          "vehicleId": "7"
+        },
+        {
+          "deliveryPartnerId": "N55ZaVlkzynVqdQMamOc",
+          "name": "Borzo",
+          "serviceId": "standard",
+          "vehicleId": "8"
+        },
+        {
+          "deliveryPartnerId": "g7CIrjwL3mDbCy50cJ9B",
+          "name": "GoSend",
+          "serviceId": "",
+          "vehicleId": ""
+        },
+        {
+          "deliveryPartnerId": "tKltNWbr9mC8b544ZwQy",
+          "name": "NCS",
+          "serviceId": "",
+          "vehicleId": ""
+        },
+        {
+          "deliveryPartnerId": "C5ygrrviPwdDmHAOEg7U",
+          "name": "SiCepat",
+          "serviceId": "SIUNT",
+          "vehicleId": "car"
+        },
+        {
+          "deliveryPartnerId": "C5ygrrviPwdDmHAOEg7U",
+          "name": "SiCepat",
+          "serviceId": "SIUNT",
+          "vehicleId": "bike"
+        },
+        {
+          "deliveryPartnerId": "nwWRPJIatqnnOj4J0MNR",
+          "name": "RPX",
+          "serviceId": "",
+          "vehicleId": ""
+        }
+      ]
+    },
+    "service": {
+      "sameday": {
+        "bike": [
+          {
+            "id": "FLaLLeLYBhzOJvJ3TKjc-SAME_DAY-bike",
+            "deliveryPartner": {
+              "id": "FLaLLeLYBhzOJvJ3TKjc",
+              "name": "Grab Express",
+              "iconUrl": "https://storage.googleapis.com/dev-delivery-gateway/icons/partners/grab.png"
+            },
+            "service": {
+              "id": "SAME_DAY",
+              "category": "sameday",
+              "name": "Same Day",
+              "info": ""
+            },
+            "vehicle": {
+              "id": "bike",
+              "category": "bike",
+              "name": "Bike",
+              "info": ""
+            },
+            "isIgnoreServiceType": false,
+            "isIgnoreVehicleType": true
+          },
+          {
+            "id": "YmrUZ5BKdkT5tyzenV0Z-G-SameDay-BICYCLE",
+            "deliveryPartner": {
+              "id": "YmrUZ5BKdkT5tyzenV0Z",
+              "name": "Westbike",
+              "iconUrl": "https://storage.googleapis.com/dev-delivery-gateway/icons/partners/westbike.png"
+            },
+            "service": {
+              "id": "G-SameDay",
+              "category": "sameday",
+              "name": "Sameday",
+              "info": "2 - 4 hours"
+            },
+            "vehicle": {
+              "id": "BICYCLE",
+              "category": "bike",
+              "name": "Bicycle",
+              "info": ""
+            },
+            "isIgnoreServiceType": false,
+            "isIgnoreVehicleType": true
+          },
+          {
+            "id": "g7CIrjwL3mDbCy50cJ9B-SameDay-bike",
+            "deliveryPartner": {
+              "id": "g7CIrjwL3mDbCy50cJ9B",
+              "name": "GoSend",
+              "iconUrl": "https://storage.googleapis.com/dev-delivery-gateway/icons/partners/gosend.png"
+            },
+            "service": {
+              "id": "SameDay",
+              "category": "sameday",
+              "name": "Sameday",
+              "info": ""
+            },
+            "vehicle": {
+              "id": "bike",
+              "category": "bike",
+              "name": "Bike"
+            },
+            "isIgnoreServiceType": true,
+            "isIgnoreVehicleType": true
+          },
+          {
+            "id": "C5ygrrviPwdDmHAOEg7U-KEPO-bike",
+            "deliveryPartner": {
+              "id": "C5ygrrviPwdDmHAOEg7U",
+              "name": "SiCepat",
+              "iconUrl": "https://storage.googleapis.com/dev-delivery-gateway/icons/partners/sicepat.png"
+            },
+            "service": {
+              "id": "KEPO",
+              "category": "sameday",
+              "name": "Kepo",
+              "info": ""
+            },
+            "vehicle": {
+              "id": "bike",
+              "category": "bike",
+              "name": "Bike"
+            },
+            "isIgnoreServiceType": true,
+            "isIgnoreVehicleType": true
+          },
+          {
+            "id": "C5ygrrviPwdDmHAOEg7U-SIUNT-bike",
+            "deliveryPartner": {
+              "id": "C5ygrrviPwdDmHAOEg7U",
+              "name": "SiCepat",
+              "iconUrl": "https://storage.googleapis.com/dev-delivery-gateway/icons/partners/sicepat.png"
+            },
+            "service": {
+              "id": "SIUNT",
+              "category": "sameday",
+              "name": "Siunt",
+              "info": ""
+            },
+            "vehicle": {
+              "id": "bike",
+              "category": "bike",
+              "name": "Bike"
+            },
+            "isIgnoreServiceType": false,
+            "isIgnoreVehicleType": false
+          },
+          {
+            "id": "C5ygrrviPwdDmHAOEg7U-SDS-bike",
+            "deliveryPartner": {
+              "id": "C5ygrrviPwdDmHAOEg7U",
+              "name": "SiCepat",
+              "iconUrl": "https://storage.googleapis.com/dev-delivery-gateway/icons/partners/sicepat.png"
+            },
+            "service": {
+              "id": "SDS",
+              "category": "sameday",
+              "name": "Sds",
+              "info": ""
+            },
+            "vehicle": {
+              "id": "bike",
+              "category": "bike",
+              "name": "Bike"
+            },
+            "isIgnoreServiceType": true,
+            "isIgnoreVehicleType": true
+          }
+        ],
+        "other": [
+          {
+            "id": "A5gQcescT0c2FDk9vs9R-Sameday-other",
+            "deliveryPartner": {
+              "id": "A5gQcescT0c2FDk9vs9R",
+              "name": "Ninja",
+              "iconUrl": "https://storage.googleapis.com/dev-delivery-gateway/icons/partners/ninja.png"
+            },
+            "service": {
+              "id": "Sameday",
+              "category": "sameday",
+              "name": "Sameday"
+            },
+            "vehicle": {
+              "id": "other",
+              "category": "other",
+              "name": "Other"
+            },
+            "isIgnoreServiceType": true,
+            "isIgnoreVehicleType": false
+          },
+          {
+            "id": "e7Leogt3kny8jpGz5iCJ-SDS-other",
+            "deliveryPartner": {
+              "id": "e7Leogt3kny8jpGz5iCJ",
+              "name": "Tiki",
+              "iconUrl": "https://storage.googleapis.com/dev-delivery-gateway/icons/partners/tiki.png"
+            },
+            "service": {
+              "id": "SDS",
+              "category": "sameday",
+              "name": "Same Day Service",
+              "info": ""
+            },
+            "vehicle": {
+              "id": "other",
+              "category": "other",
+              "name": "Other"
+            },
+            "isIgnoreServiceType": true,
+            "isIgnoreVehicleType": true
+          },
+          {
+            "id": "tKltNWbr9mC8b544ZwQy-SDS-other",
+            "deliveryPartner": {
+              "id": "tKltNWbr9mC8b544ZwQy",
+              "name": "NCS",
+              "iconUrl": "https://storage.googleapis.com/dev-delivery-gateway/icons/partners/ncs.png"
+            },
+            "service": {
+              "id": "SDS",
+              "category": "sameday",
+              "name": "SDS(SameDay Service)",
+              "info": ""
+            },
+            "vehicle": {
+              "id": "other",
+              "category": "other",
+              "name": "Other"
+            },
+            "isIgnoreServiceType": true,
+            "isIgnoreVehicleType": true
+          },
+          {
+            "id": "tKltNWbr9mC8b544ZwQy-NFS-other",
+            "deliveryPartner": {
+              "id": "tKltNWbr9mC8b544ZwQy",
+              "name": "NCS",
+              "iconUrl": "https://storage.googleapis.com/dev-delivery-gateway/icons/partners/ncs.png"
+            },
+            "service": {
+              "id": "NFS",
+              "category": "sameday",
+              "name": "NFS(Food-SameDay Service)",
+              "info": ""
+            },
+            "vehicle": {
+              "id": "other",
+              "category": "other",
+              "name": "Other"
+            },
+            "isIgnoreServiceType": true,
+            "isIgnoreVehicleType": true
+          },
+          {
+            "id": "nwWRPJIatqnnOj4J0MNR-SDP-other",
+            "deliveryPartner": {
+              "id": "nwWRPJIatqnnOj4J0MNR",
+              "name": "RPX",
+              "iconUrl": "https://storage.googleapis.com/dev-delivery-gateway/icons/partners/jnt.png"
+            },
+            "service": {
+              "id": "SDP",
+              "category": "sameday",
+              "name": "Sameday Package",
+              "info": ""
+            },
+            "vehicle": {
+              "id": "other",
+              "category": "other",
+              "name": "Other"
+            },
+            "isIgnoreServiceType": true,
+            "isIgnoreVehicleType": true
+          },
+          {
+            "id": "nwWRPJIatqnnOj4J0MNR-PSS-other",
+            "deliveryPartner": {
+              "id": "nwWRPJIatqnnOj4J0MNR",
+              "name": "RPX",
+              "iconUrl": "https://storage.googleapis.com/dev-delivery-gateway/icons/partners/jnt.png"
+            },
+            "service": {
+              "id": "PSS",
+              "category": "sameday",
+              "name": "RPX PAS SameDay",
+              "info": ""
+            },
+            "vehicle": {
+              "id": "other",
+              "category": "other",
+              "name": "Other"
+            },
+            "isIgnoreServiceType": true,
+            "isIgnoreVehicleType": true
+          }
+        ],
+        "car": [
+          {
+            "id": "C5ygrrviPwdDmHAOEg7U-KEPO-car",
+            "deliveryPartner": {
+              "id": "C5ygrrviPwdDmHAOEg7U",
+              "name": "SiCepat",
+              "iconUrl": "https://storage.googleapis.com/dev-delivery-gateway/icons/partners/sicepat.png"
+            },
+            "service": {
+              "id": "KEPO",
+              "category": "sameday",
+              "name": "Kepo",
+              "info": ""
+            },
+            "vehicle": {
+              "id": "car",
+              "category": "car",
+              "name": "Car"
+            },
+            "isIgnoreServiceType": true,
+            "isIgnoreVehicleType": true
+          },
+          {
+            "id": "C5ygrrviPwdDmHAOEg7U-SIUNT-car",
+            "deliveryPartner": {
+              "id": "C5ygrrviPwdDmHAOEg7U",
+              "name": "SiCepat",
+              "iconUrl": "https://storage.googleapis.com/dev-delivery-gateway/icons/partners/sicepat.png"
+            },
+            "service": {
+              "id": "SIUNT",
+              "category": "sameday",
+              "name": "Siunt",
+              "info": ""
+            },
+            "vehicle": {
+              "id": "car",
+              "category": "car",
+              "name": "Car"
+            },
+            "isIgnoreServiceType": false,
+            "isIgnoreVehicleType": false
+          },
+          {
+            "id": "C5ygrrviPwdDmHAOEg7U-SDS-car",
+            "deliveryPartner": {
+              "id": "C5ygrrviPwdDmHAOEg7U",
+              "name": "SiCepat",
+              "iconUrl": "https://storage.googleapis.com/dev-delivery-gateway/icons/partners/sicepat.png"
+            },
+            "service": {
+              "id": "SDS",
+              "category": "sameday",
+              "name": "Sds",
+              "info": ""
+            },
+            "vehicle": {
+              "id": "car",
+              "category": "car",
+              "name": "Car"
+            },
+            "isIgnoreServiceType": true,
+            "isIgnoreVehicleType": true
+          }
+        ]
+      },
+      "instant": {
+        "bike": [
+          {
+            "id": "FLaLLeLYBhzOJvJ3TKjc-INSTANT-bike",
+            "deliveryPartner": {
+              "id": "FLaLLeLYBhzOJvJ3TKjc",
+              "name": "Grab Express",
+              "iconUrl": "https://storage.googleapis.com/dev-delivery-gateway/icons/partners/grab.png"
+            },
+            "service": {
+              "id": "INSTANT",
+              "category": "instant",
+              "name": "Instant",
+              "info": ""
+            },
+            "vehicle": {
+              "id": "bike",
+              "category": "bike",
+              "name": "Bike",
+              "info": ""
+            },
+            "isIgnoreServiceType": false,
+            "isIgnoreVehicleType": true
+          },
+          {
+            "id": "gQp55UDteuLTEtDx5bbm-instant-MOTORCYCLE",
+            "deliveryPartner": {
+              "id": "gQp55UDteuLTEtDx5bbm",
+              "name": "Lalamove",
+              "iconUrl": "https://storage.googleapis.com/delivery_assets/icons/partners/lalamove.png"
+            },
+            "service": {
+              "id": "instant",
+              "category": "instant",
+              "name": "Instant",
+              "info": ""
+            },
+            "vehicle": {
+              "id": "MOTORCYCLE",
+              "category": "bike",
+              "name": "Motorcycle"
+            },
+            "isIgnoreServiceType": false,
+            "isIgnoreVehicleType": false
+          },
+          {
+            "id": "jrwGzvu5ZddSvWz8DWAJ-instant-bike",
+            "deliveryPartner": {
+              "id": "jrwGzvu5ZddSvWz8DWAJ",
+              "name": "RaRa",
+              "iconUrl": "https://storage.googleapis.com/dev-delivery-gateway/icons/partners/rara.png"
+            },
+            "service": {
+              "id": "instant",
+              "category": "instant",
+              "name": "Instant",
+              "info": ""
+            },
+            "vehicle": {
+              "id": "bike",
+              "category": "bike",
+              "name": "Bike",
+              "info": ""
+            },
+            "isIgnoreServiceType": true,
+            "isIgnoreVehicleType": true
+          },
+          {
+            "id": "g7CIrjwL3mDbCy50cJ9B-Instant-bike",
+            "deliveryPartner": {
+              "id": "g7CIrjwL3mDbCy50cJ9B",
+              "name": "GoSend",
+              "iconUrl": "https://storage.googleapis.com/dev-delivery-gateway/icons/partners/gosend.png"
+            },
+            "service": {
+              "id": "Instant",
+              "category": "instant",
+              "name": "Instant",
+              "info": ""
+            },
+            "vehicle": {
+              "id": "bike",
+              "category": "bike",
+              "name": "Bike"
+            },
+            "isIgnoreServiceType": true,
+            "isIgnoreVehicleType": true
+          }
+        ],
+        "car": [
+          {
+            "id": "gQp55UDteuLTEtDx5bbm-instant-SEDAN",
+            "deliveryPartner": {
+              "id": "gQp55UDteuLTEtDx5bbm",
+              "name": "Lalamove",
+              "iconUrl": "https://storage.googleapis.com/delivery_assets/icons/partners/lalamove.png"
+            },
+            "service": {
+              "id": "instant",
+              "category": "instant",
+              "name": "Instant",
+              "info": ""
+            },
+            "vehicle": {
+              "id": "SEDAN",
+              "category": "car",
+              "name": "Sedan"
+            },
+            "isIgnoreServiceType": false,
+            "isIgnoreVehicleType": false
+          },
+          {
+            "id": "gQp55UDteuLTEtDx5bbm-instant-TRUCK175",
+            "deliveryPartner": {
+              "id": "gQp55UDteuLTEtDx5bbm",
+              "name": "Lalamove",
+              "iconUrl": "https://storage.googleapis.com/delivery_assets/icons/partners/lalamove.png"
+            },
+            "service": {
+              "id": "instant",
+              "category": "instant",
+              "name": "Instant",
+              "info": ""
+            },
+            "vehicle": {
+              "id": "TRUCK175",
+              "category": "car",
+              "name": "Truck175"
+            },
+            "isIgnoreServiceType": false,
+            "isIgnoreVehicleType": false
+          },
+          {
+            "id": "gQp55UDteuLTEtDx5bbm-instant-VAN",
+            "deliveryPartner": {
+              "id": "gQp55UDteuLTEtDx5bbm",
+              "name": "Lalamove",
+              "iconUrl": "https://storage.googleapis.com/delivery_assets/icons/partners/lalamove.png"
+            },
+            "service": {
+              "id": "instant",
+              "category": "instant",
+              "name": "Instant",
+              "info": ""
+            },
+            "vehicle": {
+              "id": "VAN",
+              "category": "car",
+              "name": "VAN"
+            },
+            "isIgnoreServiceType": false,
+            "isIgnoreVehicleType": false
+          },
+          {
+            "id": "gQp55UDteuLTEtDx5bbm-instant-MPV",
+            "deliveryPartner": {
+              "id": "gQp55UDteuLTEtDx5bbm",
+              "name": "Lalamove",
+              "iconUrl": "https://storage.googleapis.com/delivery_assets/icons/partners/lalamove.png"
+            },
+            "service": {
+              "id": "instant",
+              "category": "instant",
+              "name": "Instant",
+              "info": ""
+            },
+            "vehicle": {
+              "id": "MPV",
+              "category": "car",
+              "name": "MPV"
+            },
+            "isIgnoreServiceType": false,
+            "isIgnoreVehicleType": false
+          }
+        ]
+      },
+      "regular": {
+        "other": [
+          {
+            "id": "rD6xXDNBIbdU9juIVWHY-EZ-other",
+            "deliveryPartner": {
+              "id": "rD6xXDNBIbdU9juIVWHY",
+              "name": "J&T",
+              "iconUrl": "https://storage.googleapis.com/dev-delivery-gateway/icons/partners/jnt.png"
+            },
+            "service": {
+              "id": "EZ",
+              "category": "regular",
+              "name": "EZ",
+              "info": ""
+            },
+            "vehicle": {
+              "id": "other",
+              "category": "other",
+              "name": "Other"
+            },
+            "isIgnoreServiceType": false,
+            "isIgnoreVehicleType": true
+          },
+          {
+            "id": "A5gQcescT0c2FDk9vs9R-Standard-other",
+            "deliveryPartner": {
+              "id": "A5gQcescT0c2FDk9vs9R",
+              "name": "Ninja",
+              "iconUrl": "https://storage.googleapis.com/dev-delivery-gateway/icons/partners/ninja.png"
+            },
+            "service": {
+              "id": "Standard",
+              "category": "regular",
+              "name": "Standard"
+            },
+            "vehicle": {
+              "id": "other",
+              "category": "other",
+              "name": "Other"
+            },
+            "isIgnoreServiceType": true,
+            "isIgnoreVehicleType": false
+          },
+          {
+            "id": "e7Leogt3kny8jpGz5iCJ-TRC-other",
+            "deliveryPartner": {
+              "id": "e7Leogt3kny8jpGz5iCJ",
+              "name": "Tiki",
+              "iconUrl": "https://storage.googleapis.com/dev-delivery-gateway/icons/partners/tiki.png"
+            },
+            "service": {
+              "id": "TRC",
+              "category": "regular",
+              "name": "Trucking Service",
+              "info": ""
+            },
+            "vehicle": {
+              "id": "other",
+              "category": "other",
+              "name": "Other"
+            },
+            "isIgnoreServiceType": true,
+            "isIgnoreVehicleType": true
+          },
+          {
+            "id": "e7Leogt3kny8jpGz5iCJ-REG-other",
+            "deliveryPartner": {
+              "id": "e7Leogt3kny8jpGz5iCJ",
+              "name": "Tiki",
+              "iconUrl": "https://storage.googleapis.com/dev-delivery-gateway/icons/partners/tiki.png"
+            },
+            "service": {
+              "id": "REG",
+              "category": "regular",
+              "name": "Reguler",
+              "info": ""
+            },
+            "vehicle": {
+              "id": "other",
+              "category": "other",
+              "name": "Other"
+            },
+            "isIgnoreServiceType": true,
+            "isIgnoreVehicleType": true
+          },
+          {
+            "id": "tKltNWbr9mC8b544ZwQy-DRT-other",
+            "deliveryPartner": {
+              "id": "tKltNWbr9mC8b544ZwQy",
+              "name": "NCS",
+              "iconUrl": "https://storage.googleapis.com/dev-delivery-gateway/icons/partners/ncs.png"
+            },
+            "service": {
+              "id": "DRT",
+              "category": "regular",
+              "name": "DRT(Regular Darat)",
+              "info": ""
+            },
+            "vehicle": {
+              "id": "other",
+              "category": "other",
+              "name": "Other"
+            },
+            "isIgnoreServiceType": true,
+            "isIgnoreVehicleType": true
+          },
+          {
+            "id": "tKltNWbr9mC8b544ZwQy-NRS-other",
+            "deliveryPartner": {
+              "id": "tKltNWbr9mC8b544ZwQy",
+              "name": "NCS",
+              "iconUrl": "https://storage.googleapis.com/dev-delivery-gateway/icons/partners/ncs.png"
+            },
+            "service": {
+              "id": "NRS",
+              "category": "regular",
+              "name": "NRS(Regular Service)",
+              "info": ""
+            },
+            "vehicle": {
+              "id": "other",
+              "category": "other",
+              "name": "Other"
+            },
+            "isIgnoreServiceType": true,
+            "isIgnoreVehicleType": true
+          },
+          {
+            "id": "nwWRPJIatqnnOj4J0MNR-HWP-other",
+            "deliveryPartner": {
+              "id": "nwWRPJIatqnnOj4J0MNR",
+              "name": "RPX",
+              "iconUrl": "https://storage.googleapis.com/dev-delivery-gateway/icons/partners/jnt.png"
+            },
+            "service": {
+              "id": "HWP",
+              "category": "regular",
+              "name": "Heavy Weight Delivery",
+              "info": ""
+            },
+            "vehicle": {
+              "id": "other",
+              "category": "other",
+              "name": "Other"
+            },
+            "isIgnoreServiceType": true,
+            "isIgnoreVehicleType": true
+          },
+          {
+            "id": "nwWRPJIatqnnOj4J0MNR-RGP-other",
+            "deliveryPartner": {
+              "id": "nwWRPJIatqnnOj4J0MNR",
+              "name": "RPX",
+              "iconUrl": "https://storage.googleapis.com/dev-delivery-gateway/icons/partners/jnt.png"
+            },
+            "service": {
+              "id": "RGP",
+              "category": "regular",
+              "name": "Regular Package",
+              "info": ""
+            },
+            "vehicle": {
+              "id": "other",
+              "category": "other",
+              "name": "Other"
+            },
+            "isIgnoreServiceType": true,
+            "isIgnoreVehicleType": true
+          },
+          {
+            "id": "nwWRPJIatqnnOj4J0MNR-PHW-other",
+            "deliveryPartner": {
+              "id": "nwWRPJIatqnnOj4J0MNR",
+              "name": "RPX",
+              "iconUrl": "https://storage.googleapis.com/dev-delivery-gateway/icons/partners/jnt.png"
+            },
+            "service": {
+              "id": "PHW",
+              "category": "regular",
+              "name": "RPX PAS Heavy Weight",
+              "info": ""
+            },
+            "vehicle": {
+              "id": "other",
+              "category": "other",
+              "name": "Other"
+            },
+            "isIgnoreServiceType": true,
+            "isIgnoreVehicleType": true
+          },
+          {
+            "id": "nwWRPJIatqnnOj4J0MNR-PSR-other",
+            "deliveryPartner": {
+              "id": "nwWRPJIatqnnOj4J0MNR",
+              "name": "RPX",
+              "iconUrl": "https://storage.googleapis.com/dev-delivery-gateway/icons/partners/jnt.png"
+            },
+            "service": {
+              "id": "PSR",
+              "category": "regular",
+              "name": "RPX PAS Reguler",
+              "info": ""
+            },
+            "vehicle": {
+              "id": "other",
+              "category": "other",
+              "name": "Other"
+            },
+            "isIgnoreServiceType": true,
+            "isIgnoreVehicleType": true
+          }
+        ],
+        "car": [
+          {
+            "id": "N55ZaVlkzynVqdQMamOc-standard-1",
+            "deliveryPartner": {
+              "id": "N55ZaVlkzynVqdQMamOc",
+              "name": "Borzo",
+              "iconUrl": "https://storage.googleapis.com/delivery_assets/icons/partners/borzo.png"
+            },
+            "service": {
+              "id": "standard",
+              "category": "regular",
+              "name": "Standard",
+              "info": ""
+            },
+            "vehicle": {
+              "id": "1",
+              "category": "car",
+              "name": "Car / SUV / PickUp"
+            },
+            "isIgnoreServiceType": false,
+            "isIgnoreVehicleType": false
+          },
+          {
+            "id": "N55ZaVlkzynVqdQMamOc-standard-2",
+            "deliveryPartner": {
+              "id": "N55ZaVlkzynVqdQMamOc",
+              "name": "Borzo",
+              "iconUrl": "https://storage.googleapis.com/delivery_assets/icons/partners/borzo.png"
+            },
+            "service": {
+              "id": "standard",
+              "category": "regular",
+              "name": "Standard",
+              "info": ""
+            },
+            "vehicle": {
+              "id": "2",
+              "category": "car",
+              "name": "Minivan"
+            },
+            "isIgnoreServiceType": false,
+            "isIgnoreVehicleType": false
+          },
+          {
+            "id": "N55ZaVlkzynVqdQMamOc-standard-3",
+            "deliveryPartner": {
+              "id": "N55ZaVlkzynVqdQMamOc",
+              "name": "Borzo",
+              "iconUrl": "https://storage.googleapis.com/delivery_assets/icons/partners/borzo.png"
+            },
+            "service": {
+              "id": "standard",
+              "category": "regular",
+              "name": "Standard",
+              "info": ""
+            },
+            "vehicle": {
+              "id": "3",
+              "category": "car",
+              "name": "Van"
+            },
+            "isIgnoreServiceType": false,
+            "isIgnoreVehicleType": false
+          },
+          {
+            "id": "N55ZaVlkzynVqdQMamOc-standard-7",
+            "deliveryPartner": {
+              "id": "N55ZaVlkzynVqdQMamOc",
+              "name": "Borzo",
+              "iconUrl": "https://storage.googleapis.com/delivery_assets/icons/partners/borzo.png"
+            },
+            "service": {
+              "id": "standard",
+              "category": "regular",
+              "name": "Standard",
+              "info": ""
+            },
+            "vehicle": {
+              "id": "7",
+              "category": "car",
+              "name": "Car"
+            },
+            "isIgnoreServiceType": false,
+            "isIgnoreVehicleType": false
+          },
+          {
+            "id": "C5ygrrviPwdDmHAOEg7U-REG-car",
+            "deliveryPartner": {
+              "id": "C5ygrrviPwdDmHAOEg7U",
+              "name": "SiCepat",
+              "iconUrl": "https://storage.googleapis.com/dev-delivery-gateway/icons/partners/sicepat.png"
+            },
+            "service": {
+              "id": "REG",
+              "category": "regular",
+              "name": "Reg",
+              "info": ""
+            },
+            "vehicle": {
+              "id": "car",
+              "category": "car",
+              "name": "Car"
+            },
+            "isIgnoreServiceType": true,
+            "isIgnoreVehicleType": true
+          }
+        ],
+        "bike": [
+          {
+            "id": "N55ZaVlkzynVqdQMamOc-standard-8",
+            "deliveryPartner": {
+              "id": "N55ZaVlkzynVqdQMamOc",
+              "name": "Borzo",
+              "iconUrl": "https://storage.googleapis.com/delivery_assets/icons/partners/borzo.png"
+            },
+            "service": {
+              "id": "standard",
+              "category": "regular",
+              "name": "Standard",
+              "info": ""
+            },
+            "vehicle": {
+              "id": "8",
+              "category": "bike",
+              "name": "Motorbike"
+            },
+            "isIgnoreServiceType": false,
+            "isIgnoreVehicleType": false
+          },
+          {
+            "id": "C5ygrrviPwdDmHAOEg7U-REG-bike",
+            "deliveryPartner": {
+              "id": "C5ygrrviPwdDmHAOEg7U",
+              "name": "SiCepat",
+              "iconUrl": "https://storage.googleapis.com/dev-delivery-gateway/icons/partners/sicepat.png"
+            },
+            "service": {
+              "id": "REG",
+              "category": "regular",
+              "name": "Reg",
+              "info": ""
+            },
+            "vehicle": {
+              "id": "bike",
+              "category": "bike",
+              "name": "Bike"
+            },
+            "isIgnoreServiceType": true,
+            "isIgnoreVehicleType": true
+          }
+        ]
+      },
+      "nextday": {
+        "other": [
+          {
+            "id": "A5gQcescT0c2FDk9vs9R-Nextday-other",
+            "deliveryPartner": {
+              "id": "A5gQcescT0c2FDk9vs9R",
+              "name": "Ninja",
+              "iconUrl": "https://storage.googleapis.com/dev-delivery-gateway/icons/partners/ninja.png"
+            },
+            "service": {
+              "id": "Nextday",
+              "category": "nextday",
+              "name": "Nextday"
+            },
+            "vehicle": {
+              "id": "other",
+              "category": "other",
+              "name": "Other"
+            },
+            "isIgnoreServiceType": true,
+            "isIgnoreVehicleType": false
+          },
+          {
+            "id": "e7Leogt3kny8jpGz5iCJ-ONS-other",
+            "deliveryPartner": {
+              "id": "e7Leogt3kny8jpGz5iCJ",
+              "name": "Tiki",
+              "iconUrl": "https://storage.googleapis.com/dev-delivery-gateway/icons/partners/tiki.png"
+            },
+            "service": {
+              "id": "ONS",
+              "category": "nextday",
+              "name": "Over Night Service",
+              "info": ""
+            },
+            "vehicle": {
+              "id": "other",
+              "category": "other",
+              "name": "Other"
+            },
+            "isIgnoreServiceType": true,
+            "isIgnoreVehicleType": true
+          },
+          {
+            "id": "tKltNWbr9mC8b544ZwQy-NFO-other",
+            "deliveryPartner": {
+              "id": "tKltNWbr9mC8b544ZwQy",
+              "name": "NCS",
+              "iconUrl": "https://storage.googleapis.com/dev-delivery-gateway/icons/partners/ncs.png"
+            },
+            "service": {
+              "id": "NFO",
+              "category": "nextday",
+              "name": "NFO(Food-One Night Service)",
+              "info": ""
+            },
+            "vehicle": {
+              "id": "other",
+              "category": "other",
+              "name": "Other"
+            },
+            "isIgnoreServiceType": true,
+            "isIgnoreVehicleType": true
+          },
+          {
+            "id": "tKltNWbr9mC8b544ZwQy-ONS-other",
+            "deliveryPartner": {
+              "id": "tKltNWbr9mC8b544ZwQy",
+              "name": "NCS",
+              "iconUrl": "https://storage.googleapis.com/dev-delivery-gateway/icons/partners/ncs.png"
+            },
+            "service": {
+              "id": "ONS",
+              "category": "nextday",
+              "name": "ONS(One Night Service)",
+              "info": ""
+            },
+            "vehicle": {
+              "id": "other",
+              "category": "other",
+              "name": "Other"
+            },
+            "isIgnoreServiceType": true,
+            "isIgnoreVehicleType": true
+          },
+          {
+            "id": "nwWRPJIatqnnOj4J0MNR-PSN-other",
+            "deliveryPartner": {
+              "id": "nwWRPJIatqnnOj4J0MNR",
+              "name": "RPX",
+              "iconUrl": "https://storage.googleapis.com/dev-delivery-gateway/icons/partners/jnt.png"
+            },
+            "service": {
+              "id": "PSN",
+              "category": "nextday",
+              "name": "RPX PAS NextDay",
+              "info": ""
+            },
+            "vehicle": {
+              "id": "other",
+              "category": "other",
+              "name": "Other"
+            },
+            "isIgnoreServiceType": true,
+            "isIgnoreVehicleType": true
+          },
+          {
+            "id": "nwWRPJIatqnnOj4J0MNR-PSM-other",
+            "deliveryPartner": {
+              "id": "nwWRPJIatqnnOj4J0MNR",
+              "name": "RPX",
+              "iconUrl": "https://storage.googleapis.com/dev-delivery-gateway/icons/partners/jnt.png"
+            },
+            "service": {
+              "id": "PSM",
+              "category": "nextday",
+              "name": "RPX PAS MidDay",
+              "info": ""
+            },
+            "vehicle": {
+              "id": "other",
+              "category": "other",
+              "name": "Other"
+            },
+            "isIgnoreServiceType": true,
+            "isIgnoreVehicleType": true
+          },
+          {
+            "id": "nwWRPJIatqnnOj4J0MNR-NDP-other",
+            "deliveryPartner": {
+              "id": "nwWRPJIatqnnOj4J0MNR",
+              "name": "RPX",
+              "iconUrl": "https://storage.googleapis.com/dev-delivery-gateway/icons/partners/jnt.png"
+            },
+            "service": {
+              "id": "NDP",
+              "category": "nextday",
+              "name": "NextDay Package",
+              "info": ""
+            },
+            "vehicle": {
+              "id": "other",
+              "category": "other",
+              "name": "Other"
+            },
+            "isIgnoreServiceType": true,
+            "isIgnoreVehicleType": true
+          },
+          {
+            "id": "nwWRPJIatqnnOj4J0MNR-MDP-other",
+            "deliveryPartner": {
+              "id": "nwWRPJIatqnnOj4J0MNR",
+              "name": "RPX",
+              "iconUrl": "https://storage.googleapis.com/dev-delivery-gateway/icons/partners/jnt.png"
+            },
+            "service": {
+              "id": "MDP",
+              "category": "nextday",
+              "name": "MidNight Package",
+              "info": ""
+            },
+            "vehicle": {
+              "id": "other",
+              "category": "other",
+              "name": "Other"
+            },
+            "isIgnoreServiceType": true,
+            "isIgnoreVehicleType": true
+          }
+        ],
+        "bike": [
+          {
+            "id": "C5ygrrviPwdDmHAOEg7U-BEST-bike",
+            "deliveryPartner": {
+              "id": "C5ygrrviPwdDmHAOEg7U",
+              "name": "SiCepat",
+              "iconUrl": "https://storage.googleapis.com/dev-delivery-gateway/icons/partners/sicepat.png"
+            },
+            "service": {
+              "id": "BEST",
+              "category": "nextday",
+              "name": "Best",
+              "info": ""
+            },
+            "vehicle": {
+              "id": "bike",
+              "category": "bike",
+              "name": "Bike"
+            },
+            "isIgnoreServiceType": true,
+            "isIgnoreVehicleType": true
+          }
+        ]
+      },
+      "economy": {
+        "other": [
+          {
+            "id": "e7Leogt3kny8jpGz5iCJ-ECO-other",
+            "deliveryPartner": {
+              "id": "e7Leogt3kny8jpGz5iCJ",
+              "name": "Tiki",
+              "iconUrl": "https://storage.googleapis.com/dev-delivery-gateway/icons/partners/tiki.png"
+            },
+            "service": {
+              "id": "ECO",
+              "category": "economy",
+              "name": "Economy Service",
+              "info": ""
+            },
+            "vehicle": {
+              "id": "other",
+              "category": "other",
+              "name": "Other"
+            },
+            "isIgnoreServiceType": true,
+            "isIgnoreVehicleType": true
+          },
+          {
+            "id": "tKltNWbr9mC8b544ZwQy-JMR-other",
+            "deliveryPartner": {
+              "id": "tKltNWbr9mC8b544ZwQy",
+              "name": "NCS",
+              "iconUrl": "https://storage.googleapis.com/dev-delivery-gateway/icons/partners/ncs.png"
+            },
+            "service": {
+              "id": "JMR",
+              "category": "economy",
+              "name": "JMR(Jawa Murah)",
+              "info": ""
+            },
+            "vehicle": {
+              "id": "other",
+              "category": "other",
+              "name": "Other"
+            },
+            "isIgnoreServiceType": true,
+            "isIgnoreVehicleType": true
+          },
+          {
+            "id": "nwWRPJIatqnnOj4J0MNR-ECP-other",
+            "deliveryPartner": {
+              "id": "nwWRPJIatqnnOj4J0MNR",
+              "name": "RPX",
+              "iconUrl": "https://storage.googleapis.com/dev-delivery-gateway/icons/partners/jnt.png"
+            },
+            "service": {
+              "id": "ECP",
+              "category": "economy",
+              "name": "Economy Delivery",
+              "info": ""
+            },
+            "vehicle": {
+              "id": "other",
+              "category": "other",
+              "name": "Other"
+            },
+            "isIgnoreServiceType": true,
+            "isIgnoreVehicleType": true
+          },
+          {
+            "id": "nwWRPJIatqnnOj4J0MNR-PSC-other",
+            "deliveryPartner": {
+              "id": "nwWRPJIatqnnOj4J0MNR",
+              "name": "RPX",
+              "iconUrl": "https://storage.googleapis.com/dev-delivery-gateway/icons/partners/jnt.png"
+            },
+            "service": {
+              "id": "PSC",
+              "category": "economy",
+              "name": "RPX PAS Economy",
+              "info": ""
+            },
+            "vehicle": {
+              "id": "other",
+              "category": "other",
+              "name": "Other"
+            },
+            "isIgnoreServiceType": true,
+            "isIgnoreVehicleType": true
+          }
+        ],
+        "bike": [
+          {
+            "id": "C5ygrrviPwdDmHAOEg7U-HALU-bike",
+            "deliveryPartner": {
+              "id": "C5ygrrviPwdDmHAOEg7U",
+              "name": "SiCepat",
+              "iconUrl": "https://storage.googleapis.com/dev-delivery-gateway/icons/partners/sicepat.png"
+            },
+            "service": {
+              "id": "HALU",
+              "category": "economy",
+              "name": "Halu",
+              "info": ""
+            },
+            "vehicle": {
+              "id": "bike",
+              "category": "bike",
+              "name": "Bike"
+            },
+            "isIgnoreServiceType": true,
+            "isIgnoreVehicleType": true
+          },
+          {
+            "id": "C5ygrrviPwdDmHAOEg7U-GOKIL-bike",
+            "deliveryPartner": {
+              "id": "C5ygrrviPwdDmHAOEg7U",
+              "name": "SiCepat",
+              "iconUrl": "https://storage.googleapis.com/dev-delivery-gateway/icons/partners/sicepat.png"
+            },
+            "service": {
+              "id": "GOKIL",
+              "category": "economy",
+              "name": "Gokil",
+              "info": ""
+            },
+            "vehicle": {
+              "id": "bike",
+              "category": "bike",
+              "name": "Bike"
+            },
+            "isIgnoreServiceType": true,
+            "isIgnoreVehicleType": true
+          }
+        ],
+        "car": [
+          {
+            "id": "C5ygrrviPwdDmHAOEg7U-HALU-car",
+            "deliveryPartner": {
+              "id": "C5ygrrviPwdDmHAOEg7U",
+              "name": "SiCepat",
+              "iconUrl": "https://storage.googleapis.com/dev-delivery-gateway/icons/partners/sicepat.png"
+            },
+            "service": {
+              "id": "HALU",
+              "category": "economy",
+              "name": "Halu",
+              "info": ""
+            },
+            "vehicle": {
+              "id": "car",
+              "category": "car",
+              "name": "Car"
+            },
+            "isIgnoreServiceType": true,
+            "isIgnoreVehicleType": true
+          },
+          {
+            "id": "C5ygrrviPwdDmHAOEg7U-GOKIL-car",
+            "deliveryPartner": {
+              "id": "C5ygrrviPwdDmHAOEg7U",
+              "name": "SiCepat",
+              "iconUrl": "https://storage.googleapis.com/dev-delivery-gateway/icons/partners/sicepat.png"
+            },
+            "service": {
+              "id": "GOKIL",
+              "category": "economy",
+              "name": "Gokil",
+              "info": ""
+            },
+            "vehicle": {
+              "id": "car",
+              "category": "car",
+              "name": "Car"
+            },
+            "isIgnoreServiceType": true,
+            "isIgnoreVehicleType": true
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "meta": {
+    "status": "success",
+    "message": "Success get invoice"
+  },
+  "data": {
+    "horizon": {
+      "name": "PT Horizon Teknologi Indonesia",
+      "address": "Skystar Ventures – Cygnus Unit, New Media Tower 11th Floor, UMN Building, Scientia Garden, Jl Boulevard Gading Serpong, Kelapa Dua, Tangerang 15811",
+      "email": "admin@hzn.one",
+      "phone": "(+21) 652 3456"
+    },
+    "client": {
+      "name": "HZN",
+      "companyAddress": "Jl. Scientia Boulevard, Curug Sangereng, Kec. Klp. Dua, Tangerang, Banten",
+      "businessAddress": "Curug Sangereng, Kec. Klp. Dua, Tangerang, Banten 15810",
+      "email": "john.wick@sample-email.com",
+      "phone": "021345678190"
+    },
+    "billing": {
+      "status": "UNPAID",
+      "invoiceId": "I-IND19050000000092",
+      "invoiceNumber": "INV-0092",
+      "dateOfIssue": "1970-01-20",
+      "dueDate": "1970-02-20",
+      "subTotal": 13000,
+      "taxes": 1300,
+      "total": 13000
+    },
+    "orders": [
+      {
+        "id": "O-IDN22010000001410",
+        "createdAt": 1643357061,
+        "deliveryId": "HZN-RARA-1643357085710-C40",
+        "status": "COMPLETED",
+        "deliveryPartnerName": "RaRa",
+        "amount": 13000
+      }
+    ]
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "meta": {
+    "status": "success",
+    "message": "Successfully get master dimensions"
+  },
+  "data": [
+    {
+      "id": "wwr3mY5dngvjbQfa2Vm8",
+      "name": "Small",
+      "order": 1,
+      "isDefined": true,
+      "height": 20,
+      "width": 20,
+      "depth": 20,
+      "unit": "cm"
+    },
+    {
+      "id": "80AzpXB5lHcBpjRHZecH",
+      "name": "Medium",
+      "order": 2,
+      "isDefined": true,
+      "height": 40,
+      "width": 40,
+      "depth": 40,
+      "unit": "cm"
+    },
+    {
+      "id": "61KHPz9YAFnbyDtMGjtz",
+      "name": "Large",
+      "order": 3,
+      "isDefined": true,
+      "height": 60,
+      "width": 60,
+      "depth": 60,
+      "unit": "cm"
+    },
+    {
+      "id": "2vMV629jDxUp7PfkEC1Y",
+      "name": "Other",
+      "order": 4,
+      "isDefined": false,
+      "height": 0,
+      "width": 0,
+      "depth": 0,
+      "unit": "cm"
+    }
+  ]
+}

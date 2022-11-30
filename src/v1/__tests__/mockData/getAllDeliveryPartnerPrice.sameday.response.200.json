@@ -1,0 +1,22 @@
+{
+  "meta": {
+    "status": "success",
+    "message": "Successfully get partner price."
+  },
+  "data": [
+    {
+      "name": "GrabExpress",
+      "serviceType": "SAME_DAY",
+      "vehicleType": "bike",
+      "currency": "IDR",
+      "amount": 10000,
+      "distance": null,
+      "serviceTypeCategory": "sameday",
+      "vehicleTypeCategory": "bike",
+      "deliveryPartnerId": "FLaLLeLYBhzOJvJ3TKjc",
+      "iconUrl": "https://storage.googleapis.com/dev-delivery-gateway/icons/partners/grab.png",
+      "vehicleTypeName": "Bike",
+      "serviceTypeName": "Same Day"
+    }
+  ]
+}
