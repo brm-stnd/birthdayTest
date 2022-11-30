@@ -18,18 +18,14 @@ const UserService = {
 
     const dateFormat = dayjs(birthdayDate).format("YYYY-MM-DD");
     const userTimezone = dayjs.tz(`${dateFormat} 09:00:00`, timezone);
-    const jakartaTimezone = dayjs.tz(userTimezone, "Asia/Jakarta").toDate();
-    const dateFormatIndo = dayjs(birthdayDate).format("YYYY-MM-DD HH:mm");
 
     console.log(":::userTimezone", userTimezone);
-    console.log(":::jakartaTimezone", jakartaTimezone);
-    console.log(":::dateFormatIndo", dateFormatIndo);
 
     await UserModel.create({
       firstName,
       lastName,
       email,
-      birthdayDate: jakartaTimezone,
+      birthdayDate: userTimezone,
       timezone,
     });
   },
@@ -69,17 +65,35 @@ const UserService = {
     console.log(":::limit", limit);
 
     const currentDate = new Date();
-    const date = dayjs(currentDate).format("D");
-    const month = dayjs(currentDate).format("M");
-    const hour = dayjs(currentDate).format("H");
+    const date = dayjs(currentDate).format("DD").toString();
+    const month = dayjs(currentDate).format("MM").toString();
+    const hour = dayjs(currentDate).format("HH").toString();
 
     const otherDate = await UserModel.aggregate([
       {
         $project: {
           _id: 1,
-          month: { $month: "$birthdayDate" },
-          date: { $dayOfMonth: "$birthdayDate" },
-          hour: { $hour: "$birthdayDate" },
+          month: {
+            $dateToString: {
+              format: "%m",
+              date: "$birthdayDate",
+              timezone: "Asia/Jakarta",
+            },
+          },
+          date: {
+            $dateToString: {
+              format: "%d",
+              date: "$birthdayDate",
+              timezone: "Asia/Jakarta",
+            },
+          },
+          hour: {
+            $dateToString: {
+              format: "%H",
+              date: "$birthdayDate",
+              timezone: "Asia/Jakarta",
+            },
+          },
         },
       },
       {
@@ -92,6 +106,8 @@ const UserService = {
         },
       },
     ]);
+
+    console.log(":::otherDate", otherDate);
 
     const idList = [];
     otherDate.forEach((user) => {
@@ -121,14 +137,38 @@ const UserService = {
           firstName: 1,
           lastName: 1,
           email: 1,
-          month: { $month: "$birthdayDate" },
-          date: { $dayOfMonth: "$birthdayDate" },
-          hour: { $hour: "$birthdayDate" },
+          birthdaySended: 1,
+          month: {
+            $dateToString: {
+              format: "%m",
+              date: "$birthdayDate",
+              timezone: "Asia/Jakarta",
+            },
+          },
+          date: {
+            $dateToString: {
+              format: "%d",
+              date: "$birthdayDate",
+              timezone: "Asia/Jakarta",
+            },
+          },
+          hour: {
+            $dateToString: {
+              format: "%H",
+              date: "$birthdayDate",
+              timezone: "Asia/Jakarta",
+            },
+          },
         },
       },
       {
         $match: {
-          $and: [{ date: date }, { month: month }, { hour: hour }],
+          $and: [
+            { date: date },
+            { month: month },
+            { hour: hour },
+            { birthdaySended: false },
+          ],
         },
       },
       { $sort: { _id: -1 } },
@@ -136,7 +176,21 @@ const UserService = {
       { $limit: limit },
     ]);
 
-    const usersTest = await UserModel.aggregate([
+    console.log(
+      ":::filter",
+      JSON.stringify({
+        $match: {
+          $and: [
+            { date: date },
+            { month: month },
+            { hour: hour },
+            { birthdaySended: false },
+          ],
+        },
+      })
+    );
+
+    /* const usersTest = await UserModel.aggregate([
       {
         $project: {
           _id: 1,
@@ -152,7 +206,7 @@ const UserService = {
       { $skip: (page - 1) * limit },
       { $limit: limit },
     ]);
-    console.log(":::usersTest", usersTest);
+    console.log(":::usersTest", usersTest); */
 
     if (users.length === 0) res.status(400).json("User not found");
 

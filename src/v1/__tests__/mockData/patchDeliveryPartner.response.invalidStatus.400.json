@@ -1,7 +1,0 @@
-{
-  "meta": {
-    "status": "failed",
-    "message": "\"status\" must be one of [ENABLED, DISABLED]"
-  },
-  "data": null
-}

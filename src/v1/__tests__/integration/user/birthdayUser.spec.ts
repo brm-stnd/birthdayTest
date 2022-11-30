@@ -1,3 +1,5 @@
+import nock from "nock";
+import config from "@config/config";
 import request from "supertest";
 import app from "@server/app";
 import dayjs from "dayjs";
@@ -9,14 +11,32 @@ describe("User - birthday user routes", () => {
   describe("GET /users/birthday", () => {
     const endpoint = "/users/birthday";
 
+    beforeAll(() => {
+      nock.disableNetConnect();
+      nock.enableNetConnect("127.0.0.1");
+    });
+
+    afterAll(() => {
+      nock.enableNetConnect();
+    });
+
     it("responds with 200 success send birthday", async () => {
       await UserModel.create({
         _id: new Types.ObjectId(),
         firstName: "bram",
         lastName: "dewangga",
         email: "asdf@dafg.com",
+        birthdayDate: new Date(1995, 10, 10),
+        timezone: "Asia/Jakarta",
+      });
+
+      await UserModel.create({
+        _id: new Types.ObjectId(),
+        firstName: "bram",
+        lastName: "dewangga",
+        email: "asdf@dafg.com",
         birthdayDate: new Date(),
-        timezone: "Australia/Melbourne",
+        timezone: "Asia/Jakarta",
       });
 
       const dateData = new Date();
@@ -27,6 +47,10 @@ describe("User - birthday user routes", () => {
       console.log("::date test", date);
       console.log("::month test", month);
       console.log("::hour test", hour);
+
+      nock(config.EMAIL_SERVICE_URI)
+        .post("/send-email")
+        .reply(200, { status: "sent", sentTime: "2022-11-30T16:18:47.722Z" });
 
       const { status, body } = await request(app).get(endpoint).query({
         page: 1,

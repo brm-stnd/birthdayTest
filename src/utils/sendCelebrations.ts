@@ -11,13 +11,15 @@ const sendCelebrations = async (
     users.map(async (user) => {
       let message = "";
       if (event === "birthday") {
-        message = `Hi, ${user.fistName} ${user.lastName} it’s your birthday.`;
+        message = `Hi, ${user.firstName} ${user.lastName} it’s your birthday.`;
       }
 
       const sendMail = await request(config.EMAIL_SERVICE_URI).post(path, {
         email: user.email,
         message: message,
       });
+
+      console.log(":::sendMail", sendMail);
 
       if (sendMail.status === 200) {
         successSendedIds.push(user._id);
