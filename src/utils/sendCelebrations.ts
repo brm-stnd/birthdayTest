@@ -19,8 +19,6 @@ const sendCelebrations = async (
         message: message,
       });
 
-      console.log(":::sendMail", sendMail);
-
       if (sendMail.status === 200) {
         successSendedIds.push(user._id);
       }

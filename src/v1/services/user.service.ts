@@ -19,8 +19,6 @@ const UserService = {
     const dateFormat = dayjs(birthdayDate).format("YYYY-MM-DD");
     const userTimezone = dayjs.tz(`${dateFormat} 09:00:00`, timezone);
 
-    console.log(":::userTimezone", userTimezone);
-
     await UserModel.create({
       firstName,
       lastName,
@@ -62,9 +60,6 @@ const UserService = {
     await user.save();
   },
   birthday: async (page: number, limit: number, res): Promise<void> => {
-    console.log(":::page", page);
-    console.log(":::limit", limit);
-
     const currentDate = new Date();
     const date = dayjs(currentDate).format("DD").toString();
     const month = dayjs(currentDate).format("MM").toString();
@@ -108,8 +103,6 @@ const UserService = {
       },
     ]);
 
-    console.log(":::otherDate", otherDate);
-
     const idList = [];
     otherDate.forEach((user) => {
       idList.push(user._id);
@@ -123,14 +116,6 @@ const UserService = {
       );
     }
 
-    console.log("::date", date);
-    console.log("::month", month);
-    console.log("::hour", hour);
-
-    console.log(":::idList", idList);
-
-    console.log(":::page", page);
-    console.log(":::limit", limit);
     const users = await UserModel.aggregate([
       {
         $project: {
@@ -177,44 +162,9 @@ const UserService = {
       { $limit: limit },
     ]);
 
-    console.log(
-      ":::filter",
-      JSON.stringify({
-        $match: {
-          $and: [
-            { date: date },
-            { month: month },
-            { hour: hour },
-            { birthdaySended: false },
-          ],
-        },
-      })
-    );
-
-    /* const usersTest = await UserModel.aggregate([
-      {
-        $project: {
-          _id: 1,
-          firstName: 1,
-          lastName: 1,
-          email: 1,
-          month: { $month: "$birthdayDate" },
-          date: { $dayOfMonth: "$birthdayDate" },
-          hour: { $hour: "$birthdayDate" },
-        },
-      },
-      { $sort: { _id: -1 } },
-      { $skip: (page - 1) * limit },
-      { $limit: limit },
-    ]);
-    console.log(":::usersTest", usersTest); */
-
     if (users.length === 0) res.status(400).json("User not found");
 
-    console.log(":::users", users);
-
     const successSendedIds = await sendCelebrations(users, "birthday");
-    console.log(":::successSendedIds", successSendedIds);
     if (successSendedIds.length > 0) {
       await UserModel.updateMany(
         { _id: { $in: successSendedIds } },

@@ -2,7 +2,6 @@ import nock from "nock";
 import config from "@config/config";
 import request from "supertest";
 import app from "@server/app";
-import dayjs from "dayjs";
 import { Types } from "mongoose";
 
 import { UserModel } from "@models";
@@ -39,15 +38,6 @@ describe("User - birthday user routes", () => {
         timezone: "Asia/Jakarta",
       });
 
-      const dateData = new Date();
-      const date = dayjs(dateData).format("D");
-      const month = dayjs(dateData).format("M");
-      const hour = dayjs(dateData).format("H");
-
-      console.log("::date test", date);
-      console.log("::month test", month);
-      console.log("::hour test", hour);
-
       nock(config.EMAIL_SERVICE_URI)
         .post("/send-email")
         .reply(200, { status: "sent", sentTime: "2022-11-30T16:18:47.722Z" });
@@ -61,7 +51,7 @@ describe("User - birthday user routes", () => {
       expect(body).toEqual("Sended birthday");
     });
 
-    /* it("responds with 400 user not found", async () => {
+    it("responds with 400 user not found", async () => {
       const { status, body } = await request(app).get(endpoint).query({
         page: 1,
         limit: 1000,
@@ -69,6 +59,6 @@ describe("User - birthday user routes", () => {
 
       expect(status).toEqual(400);
       expect(body).toEqual("User not found");
-    }); */
+    });
   });
 });
