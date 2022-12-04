@@ -22,21 +22,32 @@ describe("User - birthday user routes", () => {
     it("responds with 200 success send birthday", async () => {
       await UserModel.create({
         _id: new Types.ObjectId(),
-        firstName: "bram",
-        lastName: "dewangga",
+        firstName: "one",
+        lastName: "test",
         email: "asdf@dafg.com",
         birthdayDate: new Date(1995, 10, 10),
         timezone: "Asia/Jakarta",
       });
 
+      const today = new Date();
       await UserModel.create({
         _id: new Types.ObjectId(),
         firstName: "bram",
         lastName: "dewangga",
         email: "asdf@dafg.com",
-        birthdayDate: new Date(),
+        birthdayDate: new Date(
+          today.getFullYear(),
+          today.getMonth(),
+          today.getDate(),
+          17,
+          0,
+          0
+        ),
         timezone: "Asia/Jakarta",
       });
+
+      const usersAll = await UserModel.find({});
+      console.log(":::usersAll", usersAll);
 
       nock(config.EMAIL_SERVICE_URI)
         .post("/send-email")

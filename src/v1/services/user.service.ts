@@ -11,7 +11,7 @@ dayjs.extend(utc);
 dayjs.extend(timezone);
 
 const UserService = {
-  createCustomers: async (
+  createUser: async (
     body: IUserController.IPostCreateUserRequest
   ): Promise<void> => {
     const { firstName, lastName, email, birthdayDate, timezone } = body;
@@ -64,6 +64,9 @@ const UserService = {
     const date = dayjs(currentDate).format("DD").toString();
     const month = dayjs(currentDate).format("MM").toString();
     const hour = dayjs(currentDate).format("HH").toString();
+    console.log(":::date", date);
+    console.log(":::month", month);
+    console.log(":::hour", hour);
 
     const otherDate = await UserModel.aggregate([
       {
@@ -83,25 +86,16 @@ const UserService = {
               timezone: "Asia/Jakarta",
             },
           },
-          hour: {
-            $dateToString: {
-              format: "%H",
-              date: "$birthdayDate",
-              timezone: "Asia/Jakarta",
-            },
-          },
         },
       },
       {
         $match: {
-          $or: [
-            { date: { $ne: date } },
-            { month: { $ne: month } },
-            { hour: { $ne: hour } },
-          ],
+          $and: [{ date: { $ne: date } }, { month: { $ne: month } }],
         },
       },
     ]);
+
+    console.log(":::otherDate", otherDate);
 
     const idList = [];
     otherDate.forEach((user) => {
@@ -161,6 +155,8 @@ const UserService = {
       { $skip: (page - 1) * limit },
       { $limit: limit },
     ]);
+
+    console.log("::users", users);
 
     if (users.length === 0) res.status(400).json("User not found");
 

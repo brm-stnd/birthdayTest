@@ -10,7 +10,7 @@ const UserController = {
     next: NextFunction
   ) => {
     try {
-      await UserService.createCustomers(req.body);
+      await UserService.createUser(req.body);
 
       res.status(201).json("User Created");
     } catch (error) {
